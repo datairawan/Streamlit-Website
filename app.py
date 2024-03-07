@@ -9,22 +9,15 @@ st.markdown("""
             <style>
             header{visibility: hidden}
             footer{visibility: hidden}
+            [data-testid=stMarkdownContainer]{
+                                                text-align: center;
+                                                display: block;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                width: 100%;
+                                            }
             </style>
             """, unsafe_allow_html=True)
-
-st.markdown(
-    """
-    <style>
-        [data-testid=stMarkdownContainer]{
-            text-align: center;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
-    </style>
-    """, unsafe_allow_html=True
-    )
 
 markdown_text_style("🔥 Lagi Populer 🔥",font_size="20px")
 st.markdown('')
