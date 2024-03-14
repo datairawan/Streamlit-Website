@@ -2,7 +2,7 @@ import streamlit as st
 import diskcache as dc
 cache = dc.Cache("cache")
 
-st.markdown("Ade Ganteng")
+st.markdown("Ade Ganteng LOH")
 
 file_key = "parquet_data"
 if file_key in cache:
