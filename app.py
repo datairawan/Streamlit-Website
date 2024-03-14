@@ -7,6 +7,8 @@ cwd = os.getcwd()
 st.markdown(cwd)
 print(cwd)
 
+st.markdown(os.listdir())
+
 cache = dc.Cache("cache")
 
 st.markdown("Ade Ganteng LOH")
