@@ -20,6 +20,7 @@ with cache as c:
 st.markdown(data_cached)
 
 df = pd.DataFrame({'ade' : [1,2,3]})
+st.dataframe(df)
 
 try:
     df.to_csv("adenih.csv")
