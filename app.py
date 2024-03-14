@@ -6,9 +6,9 @@ st.markdown("Ade Ganteng")
 
 file_key = "parquet_data"
 if file_key in cache:
-    print(f"File sudah ada di cache..")
+    st.markdown("File sudah ada di cache..")
 else:
-    print("adding to cache..")
+    st.markdown("adding to cache..")
     with cache as c:
         c.set("parquet_data", "sumpah dah")
 
