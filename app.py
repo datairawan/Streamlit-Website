@@ -1,6 +1,11 @@
 import streamlit as st
 import diskcache as dc
 import pandas as pd
+import os
+
+cwd = os.getcwd()
+st.markdown(cwd)
+print(cwd)
 
 cache = dc.Cache("cache")
 
@@ -27,3 +32,4 @@ try:
     st.markdown("sending csv success..")
 except:
     st.markdown("walah gagal..")
+
